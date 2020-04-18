@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://azhe1994.github.io">
-  <title>Archives: 2019/12 | Azhe&#39;s Blog</title>
+  <title>Azhe&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="小小程序员，对编程抱有极大的热忱，喜欢尝试新的技术，全栈工程师，目前工作为算法工程师">
+  <meta name="description" content="[toc] 几乎所有的机器学习算法在训练或者预测时都是求解最优化问题，因此需要依赖微积分来求解函数的极值，而模型中某些函数的选取，也有数据性质上的考量。对于机器学习而言，微积分的主要作用是：  求解函数的极值 分析函数的性质   极限 单调性 上确界和下确界 导数 利普希茨连续条件（Lipschitz continuity） 导数与函数的单调性 导数与函数的极值 导数与函数的凹凸性 泰勒公式：理解">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Azhe&#39;s Blog">
-<meta property="og:url" content="http:&#x2F;&#x2F;azhe1994.github.io&#x2F;archives&#x2F;2019&#x2F;12&#x2F;index.html">
+<meta property="og:url" content="http:&#x2F;&#x2F;azhe1994.github.io&#x2F;math&#x2F;%E5%BE%AE%E7%A7%AF%E5%88%86.html">
 <meta property="og:site_name" content="Azhe&#39;s Blog">
-<meta property="og:description" content="小小程序员，对编程抱有极大的热忱，喜欢尝试新的技术，全栈工程师，目前工作为算法工程师">
+<meta property="og:description" content="[toc] 几乎所有的机器学习算法在训练或者预测时都是求解最优化问题，因此需要依赖微积分来求解函数的极值，而模型中某些函数的选取，也有数据性质上的考量。对于机器学习而言，微积分的主要作用是：  求解函数的极值 分析函数的性质   极限 单调性 上确界和下确界 导数 利普希茨连续条件（Lipschitz continuity） 导数与函数的单调性 导数与函数的极值 导数与函数的凹凸性 泰勒公式：理解">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-17T10:06:19.025Z">
+<meta property="article:modified_time" content="2020-04-17T04:57:08.395Z">
 <meta property="article:author" content="AzheCo">
 <meta property="article:tag" content="人工智能">
 <meta property="article:tag" content="大数据">
@@ -173,76 +175,208 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[toc]</p>
+<p>几乎所有的机器学习算法在训练或者预测时都是求解最优化问题，因此需要依赖微积分来求解函数的极值，而模型中某些函数的选取，也有数据性质上的考量。对于机器学习而言，微积分的主要作用是：</p>
+<ol>
+<li>求解函数的极值</li>
+<li>分析函数的性质</li>
+</ol>
+<ul>
+<li>极限</li>
+<li>单调性</li>
+<li>上确界和下确界</li>
+<li>导数</li>
+<li>利普希茨连续条件（Lipschitz continuity）</li>
+<li>导数与函数的单调性</li>
+<li>导数与函数的极值</li>
+<li>导数与函数的凹凸性</li>
+<li>泰勒公式：理解梯度下降法，牛顿法的优化算法的基石。</li>
+<li>定积分：包括广义积分，被用于概率论的计算中。机器学习中很大一类算法是概率型算法，如贝叶斯分类器，概率图模型，变分推断等。这些地方都涉及到对概率密度函数进行积分。</li>
+<li>不定积分：积分在机器学习中使用的相对较少，主要用于概率的计算中，它是定积分的基础。</li>
+<li>变上限积分:分布函数是典型的变上线积分函数，同样主要用于概率计算中。</li>
+<li>多重积分：主要用于概率论中，计算随机向量的积分，如正态分布。</li>
+<li>偏微分方程：在某些理论推导中可能会使用，如变分法中的欧拉-拉格朗日方程。</li>
+<li>牛顿-莱布尼兹公式：在机器学习中很少直接使用，但它是微积分中最重要的公式之一，为定积分的计算提供了依据。</li>
+<li>常微分方程：在某些论文中会使用，但一般算法用不到。</li>
+<li>偏导数:重要性不用多说，机器学习里绝大部分函数都是多元函数，要求其极值，偏导数是绕不开的。</li>
+<li>梯度：决定了多元函数的单调性和极值，梯度下降法的推导离不开它。几乎所有连续算法都需要计算函数的梯度值，且以寻找梯度为0的点作为目标。</li>
+<li>高阶偏导数：确定函数的极值离不开它，光有梯度值还无法确定函数的极值。</li>
+<li>链式法则：同样适用广泛，各种神经网络的反向传播算法都依赖于链式法则</li>
+<li>海森(Hessian)矩阵: 决定了函数的极值和凹凸性</li>
+<li>多元函数的极值判别法则：虽然不直接使用，但对理解最优化方法至关重要。</li>
+<li>多元函数的凹凸性判别法则：证明一个问题是凸优化问题是离不开它的。</li>
+<li>雅可比(Jacobian)矩阵：工科教材一般没有介绍这一概念，但和Hessian矩阵一样，并不难理解，使用它可以简化多元复合函数的求导公式，在反向传播算法中广泛使用。</li>
+<li>向量与矩阵求导：常见的一次函数，二次函数的梯度，Hessian矩阵的计算公式要烂熟于心，推导并不复杂。</li>
+</ul>
+<h1 id="高等数学目录"><a href="#高等数学目录" class="headerlink" title="高等数学目录"></a>高等数学目录</h1><p>一、函数和极限<br>映射-&gt;函数<br>数列极限-&gt;函数极限(无限接近)<br>函数极限趋近于0-&gt;无穷小,函数永远增长-&gt;无穷大<br>函数极限计算和推导方法<br>无穷小阶数比较<br>函数映射的伴随增量无穷小变化相随–&gt;函数连续性<br>函数连续性的推导原则<br>二、导数和微分<br>导数：函数伴随因变量无穷小变化的函数值变化规则<br>函数求导法则<br>高阶导数<br>隐函数求导、参数方程求导<br>微分:函数伴随因变量无穷小变化的函数求值<br>微分计算方法<br>三、微分中值定理和导数应用<br>罗尔定理:极点对导数的反推。<br>微分中值定理：由函数曲线切线-&gt;拉格朗日中值公式:用导数求函数值<br>中值公式证明反推–&gt;双函数的柯西中值定理:两个函数导数之间的关系。<br>分子分母分别求导再求极限来确定未定式的值的方法：洛必达法则<br>泰勒公式：用多级导数多项式来求函数值。<br>函数单调性与函数曲线凹凸,函数曲线凹凸与拐点<br>函数极值<br>弧微分：用切线求微弧线段长度<br>弧度：角度除以微弧线–&gt;曲率圆，曲率半径、曲率中心<br>四、不定积分<br>不定积分和积分的计算方法<br>五、定积分<br>定积分和定积分的计算方法<br>反常积分：对无穷x区间上求定积分极限值<br>反常积分的收敛<br>六、定积分的应用<br>七、微分方程<br>微分方程求解：由函数导数和自变量关系求原函数关系<br>八、空间解析几何和向量代数<br>向量和向量的计算<br>曲面方程:反应曲面上点变量关系的方程式<br>曲线方程<br>平面方程<br>直线方程<br>九、多元函数微分法及其应用<br>多元函数：多变量依赖的函数方程式<br>多元函数的极限和连续性<br>偏导数：对多元函数的某一元因变量求导的函数<br>全微分：用偏微分求全微分<br>多元复合函数的求导方法<br>多元隐函数求导<br>方向导数与梯度<br>多元函数极值<br>十、重积分<br>重积分：对多元空间求积分<br>二重积分和三重积分的计算<br>重积分的应用<br>十一、曲线积分和曲面积分<br>弧长曲线积分:对N元空间曲线(积分弧段)内的微分长度求某N元函数(被积函数)的积分。<br>坐标曲线积分的计算方法:用两个偏导数函数求坐标曲线积分<br>十二、无穷级数<br>级数:数列构成的表达式<br>级数的收敛和发散<br>幂级数，幂级数的转换与应用<br>傅里叶级数，傅里叶级数的转换与应用</p>
+<h1 id="函数与极限"><a href="#函数与极限" class="headerlink" title="函数与极限"></a>函数与极限</h1><p>映射-&gt;函数<br>数列极限-&gt;函数极限(无限接近)<br>函数极限趋近于0-&gt;无穷小,函数永远增长-&gt;无穷大<br>函数极限计算和推导方法<br>无穷小阶数比较<br>函数映射的伴随增量无穷小变化相随–&gt;函数连续性<br>函数连续性的推导原则</p>
+<h1 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h1><p>柯西(Cauchy) 19世纪给出了序列极限的严格定义：<br>$$<br>\lim\limits_{n \to \infty} x_n = x_0<br>$$<br>函数极限的 $\sigma-\epsilon$ 定义也是柯西给的：<br>若无论多小的正实数 $\epsilon$ ，都存在一个正实数 $\sigma$ ，使得 $x$ 在 $x_0$ 的去心邻域 $|x-x_0| \leq \sigma$  中， 则 $\lim\limits_{x \to x_0} f(x) = A$ </p>
+<h1 id="函数连续"><a href="#函数连续" class="headerlink" title="函数连续"></a>函数连续</h1><p>定义：当函数在某一点的值，与自变量$x$趋向这一点时的极限值相等时，称函数在该点是连续的。</p>
+<p><strong>介值定理</strong>：设函数 $f$ 在某个闭区间 $[a,b]$ 上连续，那么对于所有 $f(a)\leq k \leq f(b)$的实数$k$都存在一个实数$c$，使得$f(c)=k$。</p>
+<h1 id="极限的性质"><a href="#极限的性质" class="headerlink" title="极限的性质"></a>极限的性质</h1><p>性质：</p>
+<ul>
+<li>唯一</li>
+<li>局部有界</li>
+<li>保号</li>
+</ul>
+<p><strong>夹逼定理</strong>：若 $\lim\limits_{x \to c} f(x)=\lim\limits_{x \to c} g(x)=A$，且$h(x)$总是介于$f(x)$与$g(x)$之间，即$f(x) \leq h(x) \leq g(x)$，那么$h(x)$在点$c$附近也有极限，且极限为$A$， 即$\lim\limits_{x \to c} g(x)=A$。</p>
+<p><strong>运算法则</strong>：<br>$\lim\limits_{n \to c} tf(n) = t\lim\limits_{n \to c} f(n)$</p>
+<p><strong>重要极限</strong>：<br>$\lim\limits_{x\to 0} \frac{\sin x }{x} = 1$<br>$\lim\limits_{x \to \infin} (1+\frac{1}{x})^x = e ; \lim\limits_{x \to 0} (1+\frac{1}{x})^x = e $</p>
+<p><strong>洛必达法则</strong>：<br>对于 $\frac{0}{0}$和 $\frac{\infin}{\infin}$，<br>若在$x_0$的某一领域内满足 $\lim\limits{x\to x_0} f(x)=\lim\limits{x\to x_0} g(x)=0(或\infin) $，<br>且 $f(x),g(x)$ 在 $x_0$ 的某一领域内存在且  $g(x)\ne 0$<br>且 $\lim\limits \frac{f’(x)}{g’(x)}=A（或\infin）$ 存在<br>$\lim\limits \frac{f(x)}{g(x)}=\lim\limits \frac{f’(x)}{g’(x)}=A$，即函数比的极限等于其倒数比的极限</p>
+<h1 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h1><p>函数在某点的切线斜率就是函数在该点的导数，表示为：$\frac{dy}{dx}\mid_{x=x_0}$<br>其值为：$\lim\limits_{\delta \to 0} \frac{f(x_0)+\delta)-f(x_0)}{\delta}$<br>其物理意义为$y$在该点相对$x$的变化速度</p>
+<h1 id="偏导数"><a href="#偏导数" class="headerlink" title="偏导数"></a>偏导数</h1><p>多元函数 $y = f(x_1,x_2, \dots， x_n)$，在$(x_{1_0}, x_{2_0},\dots,x_{n_0})$点 处，求$y$对其中一个自变量$x_i$的导数即为$y$在$(x_{1_0}, x_{2_0},\dots,x_{n_0})$点处相对$x_i$偏导数。</p>
+<p>将$y$相对每个自变量的偏导数组成一个向量$(\frac{\partial y}{\partial x_1},\frac{\partial y}{\partial x_2},\dots,\frac{\partial y}{\partial x_n})$，这个向量称为<strong>梯度(Gradient)</strong>，指向$y$在$n$维空间在$(x_{1_0}, x_{2_0},\dots,x_{n_0})$点处变化速度最快的方向。</p>
+<h1 id="1-导数和偏导数"><a href="#1-导数和偏导数" class="headerlink" title="1 导数和偏导数"></a>1 导数和偏导数</h1><h3 id="1-1-导数偏导计算"><a href="#1-1-导数偏导计算" class="headerlink" title="1.1 导数偏导计算"></a>1.1 导数偏导计算</h3><p><strong>导数定义</strong>:</p>
+<p>导数(derivative)代表了在自变量变化趋于无穷小的时候，函数值的变化与自变量的变化的比值。几何意义是这个点的切线。物理意义是该时刻的（瞬时）变化率。</p>
+<p><em>注意</em>：在一元函数中，只有一个自变量变动，也就是说只存在一个方向的变化率，这也就是为什么一元函数没有偏导数的原因。在物理学中有平均速度和瞬时速度之说。平均速度有<br>$$<br>v=\frac{s}{t}<br>$$</p>
+<p>其中$v$表示平均速度，$s$表示路程，$t$表示时间。这个公式可以改写为</p>
+<p>$$<br>\bar{v}=\frac{\Delta s}{\Delta t}=\frac{s(t_0+\Delta t)-s(t_0)}{\Delta t}<br>$$</p>
+<p>其中$\Delta s$表示两点之间的距离，而$\Delta t$表示走过这段距离需要花费的时间。当$\Delta t$趋向于0（$\Delta t \to 0$）时，也就是时间变得很短时，平均速度也就变成了在$t_0$时刻的瞬时速度，表示成如下形式：</p>
+<p>$$<br>v(t_0)=\lim_{\Delta t \to 0}{\bar{v}}=\lim_{\Delta t \to 0}{\frac{\Delta s}{\Delta t}}=\lim_{\Delta t \to 0}{\frac{s(t_0+\Delta t)-s(t_0)}{\Delta t}}<br>$$</p>
+<p>实际上，上式表示的是路程$s$关于时间$t$的函数在$t=t_0$处的导数。一般的，这样定义导数：如果平均变化率的极限存在，即有</p>
+<p>$$<br>\lim_{\Delta x \to 0}{\frac{\Delta y}{\Delta x}}=\lim_{\Delta x \to 0}{\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}}<br>$$</p>
+<p>则称此极限为函数 $y=f(x)$ 在点 $x_0$ 处的导数。记作 $f’(x_0)$ 或 $y’\vert_{x=x_0}$ 或 $\frac{dy}{dx}\vert_{x=x_0}$ 或 $\frac{df(x)}{dx}\vert_{x=x_0}$。</p>
+<p>通俗地说，导数就是曲线在某一点切线的斜率。</p>
+<p><strong>偏导数</strong>:</p>
+<p>既然谈到偏导数(partial derivative)，那就至少涉及到两个自变量。以两个自变量为例，$z=f(x,y)$，从导数到偏导数，也就是从曲线来到了曲面。曲线上的一点，其切线只有一条。但是曲面上的一点，切线有无数条。而偏导数就是指多元函数沿着坐标轴的变化率。 </p>
+<p><em>注意</em>：直观地说，偏导数也就是函数在某一点上沿坐标轴正方向的的变化率。</p>
+<p>设函数$z=f(x,y)$在点$(x_0,y_0)$的领域内有定义，当$y=y_0$时，$z$可以看作关于$x$的一元函数$f(x,y_0)$，若该一元函数在$x=x_0$处可导，即有</p>
+<p>$$<br>\lim_{\Delta x \to 0}{\frac{f(x_0+\Delta x,y_0)-f(x_0,y_0)}{\Delta x}}=A<br>$$</p>
+<p>函数的极限$A$存在。那么称$A$为函数$z=f(x,y)$在点$(x_0,y_0)$处关于自变量$x$的偏导数，记作$f_x(x_0,y_0)$或$\frac{\partial z}{\partial x}\vert_{y=y_0}^{x=x_0}$或$\frac{\partial f}{\partial x}\vert_{y=y_0}^{x=x_0}$或$z_x\vert_{y=y_0}^{x=x_0}$。</p>
+<p>偏导数在求解时可以将另外一个变量看做常数，利用普通的求导方式求解，比如$z=3x^2+xy$关于$x$的偏导数就为$z_x=6x+y$，这个时候$y$相当于$x$的系数。</p>
+<p>某点$(x_0,y_0)$处的偏导数的几何意义为曲面$z=f(x,y)$与面$x=x_0$或面$y=y_0$交线在$y=y_0$或$x=x_0$处切线的斜率。  </p>
+<h2 id="1-2-导数和偏导数有什么区别？"><a href="#1-2-导数和偏导数有什么区别？" class="headerlink" title="1.2 导数和偏导数有什么区别？"></a>1.2 导数和偏导数有什么区别？</h2><p>导数和偏导没有本质区别，如果极限存在，都是当自变量的变化量趋于0时，函数值的变化量与自变量变化量比值的极限。  </p>
+<blockquote>
+<ul>
+<li>一元函数，一个$y$对应一个$x$，导数只有一个。  </li>
+<li>二元函数，一个$z$对应一个$x$和一个$y$，有两个导数：一个是$z$对$x$的导数，一个是$z$对$y$的导数，称之为偏导。  </li>
+<li>求偏导时要注意，对一个变量求导，则视另一个变量为常数，只对改变量求导，从而将偏导的求解转化成了一元函数的求导。</li>
+</ul>
+</blockquote>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/13/test/" class="archive-article-date">
-  	<time datetime="2019-12-13T09:38:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/13/test/">test</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://azhe1994.github.io/math/%E5%BE%AE%E7%A7%AF%E5%88%86.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/13/hello-world/" class="archive-article-date">
-  	<time datetime="2019-12-13T06:10:39.723Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-13</time>
-</a>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/13/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -266,7 +400,7 @@
 		mathjax: false,
 		isHome: false,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
